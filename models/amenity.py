@@ -1,8 +1,13 @@
 #!/usr/bin/python3
-"""Contains the Amenity model"""
+"""a class Amenity that inherits from BaseModel"""
+
 from models.base_model import BaseModel
 
 
 class Amenity(BaseModel):
-    """Implements the Amenity model"""
+    """Public class attributes"""
     name = ""
+
+    def __init__(self, *args, **kwargs):
+        """Initiliazes an instance"""
+        super().__init__(*args, **kwargs)
